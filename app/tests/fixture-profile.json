@@ -1,0 +1,17 @@
+{
+  "active_profile": "",
+  "request_timeout_seconds": 30,
+  "poll_timeout_seconds": 300,
+  "profiles": {
+    "sample-a": {
+      "name": "SAMPLE-A",
+      "environment": "https://tenant-a.example.invalid",
+      "integration": {
+        "refresh_flow_id": "810000151665170",
+        "key_map_flow_id": "810000151665169"
+      },
+      "administrator_asserted_full_calendar_visibility": false,
+      "administrator_asserted_no_legacy_event_coverage": false
+    }
+  }
+}

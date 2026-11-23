@@ -1,0 +1,261 @@
+{
+  "version": "1.0.3-rc1",
+  "edition": "Public evaluation",
+  "files": [
+    {
+      "path": ".gitignore",
+      "bytes": 113,
+      "sha256": "01e5c06932e9c00cbfa5f0278269cefb598e3f920e8ff5a10729b2627f3389bd"
+    },
+    {
+      "path": "README.md",
+      "bytes": 2261,
+      "sha256": "12f848c1c3a1cc67acfef01699701bd2e608fec42908b9db36fc7b79c44089ae"
+    },
+    {
+      "path": "RUN-SELF-TEST.cmd",
+      "bytes": 81,
+      "sha256": "8948d482cf35e28abe33e2dcd8aee4b571dd198da71939b6a76f466ffe25a638"
+    },
+    {
+      "path": "START-CALENDAR-LAUNCHER.cmd",
+      "bytes": 91,
+      "sha256": "ba426ed3cdfcdba415b9d05d1657fbc59b16742e9c54f01515f17c804733b632"
+    },
+    {
+      "path": "app/DELETE_ENABLEMENT.txt",
+      "bytes": 756,
+      "sha256": "8dbc9d574c1785e7c2980b9e1f4e515f122b3291a001c10ae43eeb75e0d6a7e5"
+    },
+    {
+      "path": "app/PACKAGE_MANIFEST.json",
+      "bytes": 6600,
+      "sha256": "35e864e37e99ce598f841114e1d101e6ad036866170b528ee0d36ffb1fadf97b"
+    },
+    {
+      "path": "app/RED_TEAM_GUIDE.html",
+      "bytes": 1579,
+      "sha256": "d8f0a01a959174b627994b1831ffdccecd4db89dcfa9526a9c43cfd3268b4edf"
+    },
+    {
+      "path": "app/RUN-SELF-TEST.cmd",
+      "bytes": 186,
+      "sha256": "36965c9e3ab288820cb315bedfb3ecb553cc105fa0aace23f572f9975b0aef6e"
+    },
+    {
+      "path": "app/START-CALENDAR-LAUNCHER.cmd",
+      "bytes": 1229,
+      "sha256": "04eb5d14f0e482c2774b197b2b3bf148067c63faa9aad86e5eee0e82965d850e"
+    },
+    {
+      "path": "app/WORKBOOK_PROMPT.txt",
+      "bytes": 1968,
+      "sha256": "d61512623ad440daeafa817634776a437e8b01cc9f23bd3992c790db1f827abf"
+    },
+    {
+      "path": "app/config.example.json",
+      "bytes": 109,
+      "sha256": "82274d8e20405d9d5616cd49f9e6fda4f2190f7f5adf6432037e91bac399eefc"
+    },
+    {
+      "path": "app/engine/Input_Contract.json",
+      "bytes": 3366,
+      "sha256": "c27f098f5e572c977477bf48134868ce3225e694c0082563687b67abc990a427"
+    },
+    {
+      "path": "app/engine/K12_SAMPLE_A_Create_Pilot.xlsx",
+      "bytes": 7499,
+      "sha256": "e365245a3b5479046358978d79fed2e7eba2afeeaade5452edb704fb05144e25"
+    },
+    {
+      "path": "app/engine/__init__.py",
+      "bytes": 61,
+      "sha256": "ace604a3e5306a66593e3bbc581668dfb31dfa144e1dfc3f75542744a191768d"
+    },
+    {
+      "path": "app/engine/build_input.py",
+      "bytes": 7242,
+      "sha256": "7cf7d77ae6123050f45e7bb9e125a9aaed831c0bbc4d5b9be69b2e6b6dcd3ab5"
+    },
+    {
+      "path": "app/engine/create_adapter.py",
+      "bytes": 15177,
+      "sha256": "b505566deb125c80518b8e79c4f445fae2790c845c740b20e3cdcf31cfcf0d0b"
+    },
+    {
+      "path": "app/engine/create_pilot.py",
+      "bytes": 92582,
+      "sha256": "88f66474735e8cec34720cb07295a924a346350166e475b52efaa4b3c5cb17f5"
+    },
+    {
+      "path": "app/engine/support/__init__.py",
+      "bytes": 66,
+      "sha256": "ff7593430444e17c7849e64c1a303003bbd0181657e7270dc6cfeb02c23b78d4"
+    },
+    {
+      "path": "app/engine/support/event_test.py",
+      "bytes": 31816,
+      "sha256": "510dd361a2357b2eaea616613b1eb3e4953d70ab89270c8f0468ad492b5f963f"
+    },
+    {
+      "path": "app/engine/support/export_calendars.py",
+      "bytes": 16613,
+      "sha256": "158b1409b114ee0918645df799ba1496282a075ffab1f67dfe6cda9419167ac4"
+    },
+    {
+      "path": "app/engine/test_creation_adapter.py",
+      "bytes": 23555,
+      "sha256": "800ab64cd402ab5c2cf7b353a67d0c15403d964174f973bbd2da58c39cf0dd8b"
+    },
+    {
+      "path": "app/engine/test_environment_profiles.py",
+      "bytes": 16901,
+      "sha256": "05f364c986a2d7a0d15cd4f1b733169a84158cc0a6dda4bc2cfcbbf29494dc39"
+    },
+    {
+      "path": "app/engine/test_legacy_creation.py",
+      "bytes": 22295,
+      "sha256": "b02870adeb84dd3d51f3679a7b078780b48df64f57dc57714f89adf5481ddcfd"
+    },
+    {
+      "path": "app/engine/validate_pilot.py",
+      "bytes": 10257,
+      "sha256": "aef6e242281c3cc73ebcdcf60a6aad41dbe1a86b56fdb4aad5fe81c2c73ba5a9"
+    },
+    {
+      "path": "app/environments.py",
+      "bytes": 7779,
+      "sha256": "1f6eecfcb2dcd2e46ca48cc0b04ad77982abc5c40408526839ce524b8b919b0f"
+    },
+    {
+      "path": "app/event_updates.py",
+      "bytes": 26539,
+      "sha256": "a3be9a0658f4e0fc15018382f3f4954e193da5a798979e574c108e9e6ae75ddb"
+    },
+    {
+      "path": "app/launcher.py",
+      "bytes": 37926,
+      "sha256": "7bb940ff4a92b2ad93fc5b9aea20d315689b6e4223d46ced624a7aaaa342c492"
+    },
+    {
+      "path": "app/live_acceptance.py",
+      "bytes": 26136,
+      "sha256": "b8c3d95f39c99f7e03a8d45f8cca560021e8e1e8eccfea124c4ffa9ac1bc78e8"
+    },
+    {
+      "path": "app/operations.py",
+      "bytes": 27998,
+      "sha256": "2de49b63d759fd6cd6b387ba97216987d66a2d1037c7261032c132ec2dee3d63"
+    },
+    {
+      "path": "app/templates/Calendar_Build_Blank.xlsx",
+      "bytes": 6837,
+      "sha256": "d015c88d4d3be7c7123736fb9977069ee23810c1d07df224a92b7dd5e6868dc1"
+    },
+    {
+      "path": "app/templates/Calendar_Build_Sample.xlsx",
+      "bytes": 7067,
+      "sha256": "99ff1d22a0de434a2b2a44748c3438771ce8231aedcf1326f755cdd764c1d3cf"
+    },
+    {
+      "path": "app/tests/fixture-profile.json",
+      "bytes": 469,
+      "sha256": "55c58cecaa438cd6e79de46df4ecce87fe7be7e0654fc848d3d746fea75e7c92"
+    },
+    {
+      "path": "app/tests/test_environment_launcher.py",
+      "bytes": 7596,
+      "sha256": "aa6cb9f5a74ff749486e5a76070b0c9be7b5474d0054d7b274204c96330f8c57"
+    },
+    {
+      "path": "app/tests/test_environments.py",
+      "bytes": 5947,
+      "sha256": "7df6c0a0d2e64b38e817fde56fc33d7285dd5eb89dea2e02ff8912a9e7e285b6"
+    },
+    {
+      "path": "app/tests/test_event_updates.py",
+      "bytes": 15678,
+      "sha256": "1ac32534d3c74d464588b48de1ed11868271a4b846f1e810c4f0aa86d755cfc0"
+    },
+    {
+      "path": "app/tests/test_explicit_target.py",
+      "bytes": 8972,
+      "sha256": "8b56fc5f8ff7d8d50b2314a5480bcd4f5f7e00608913048fa462292dac059dc0"
+    },
+    {
+      "path": "app/tests/test_launcher_workflow.py",
+      "bytes": 17007,
+      "sha256": "8e27ffd85b8d9e7cdec27d48e441a9a07e59ae7a8fcb3c7bf29c3ae1bf0cb725"
+    },
+    {
+      "path": "app/tests/test_live_acceptance.py",
+      "bytes": 20697,
+      "sha256": "0ce66a4e88621f68b477e2caa955549272b561e999b976008054beec5d5d50b3"
+    },
+    {
+      "path": "app/tests/test_operations.py",
+      "bytes": 18682,
+      "sha256": "ac8c68baa5a4b0669026dfeff45415d33a09312298fd4dac77f3eae01ed3642b"
+    },
+    {
+      "path": "app/tests/test_pasted_urls.py",
+      "bytes": 12406,
+      "sha256": "5569738eb191c0ef44bd2c944bfbe66dd491d3427d65c8c5a965f6b3aaaec9c4"
+    },
+    {
+      "path": "app/tests/test_release_holdouts.py",
+      "bytes": 22836,
+      "sha256": "be37bcfcbe706848068d6a6e6ec42f26171801c79c044ae7f0209bb9fa1ad99f"
+    },
+    {
+      "path": "app/tests/test_workbooks.py",
+      "bytes": 10281,
+      "sha256": "e1c8f7786c5f18066adac3e0ab0bf455ba315aaffe64d4ff854131a0e3d6eca0"
+    },
+    {
+      "path": "app/ui/app.js",
+      "bytes": 36749,
+      "sha256": "691317c136020c17f9b2c6d2183798e40a2632ebb88ab757e85def896bc643c0"
+    },
+    {
+      "path": "app/ui/index.html",
+      "bytes": 9921,
+      "sha256": "bdbdd36fe8aa5e8493a6167f1d1ae8fd7cf411649e4104ff920de833af447acf"
+    },
+    {
+      "path": "app/ui/style.css",
+      "bytes": 9540,
+      "sha256": "4f22363f8d07fa8e79df771128b31289fb5254c17acba6abb9721318ce0466a2"
+    },
+    {
+      "path": "app/workbooks.py",
+      "bytes": 19159,
+      "sha256": "495db8127d87d9eeab2d0a86c753b6687f50fc9d4678a747a7b924e7b16d5257"
+    },
+    {
+      "path": "docs/design.md",
+      "bytes": 994,
+      "sha256": "b4f426a0799f8e56ebd2aa7457a5b859d61a1b08e98c0033d4264b0efe46968f"
+    },
+    {
+      "path": "docs/images/calendar-inventory.png",
+      "bytes": 141448,
+      "sha256": "01437c4ad9d0f0d247016e4a0f445235032d435f97cf7f33cfebe78602c4187e"
+    },
+    {
+      "path": "docs/run-locally.md",
+      "bytes": 1646,
+      "sha256": "e4c73e12b5a93ecc586160f93bf6b0617172edb336aa0ea6ef56dd0c84deef76"
+    },
+    {
+      "path": "evidence/offline-test-result.json",
+      "bytes": 247,
+      "sha256": "664002dacfeb9a3a95053ccbcbc514f88f08c774bc49f2c7ce5cbdf75284db23"
+    },
+    {
+      "path": "evidence/verification.md",
+      "bytes": 1431,
+      "sha256": "46f143ac2a98b35fea52fd8378ca4cbb4db38d2bcaf5e8c73209212394723a30"
+    }
+  ]
+}

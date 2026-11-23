@@ -1,0 +1,14 @@
+Deletion is unavailable in this edition
+
+The required behavior is:
+- Assigned user: stop deletion and explain that a user is assigned.
+- Reliably verified zero assignments: allow the reviewed deletion.
+- Unknown/incomplete assignment status: stop and explain that verification failed.
+
+The current package cannot establish reliable worker assignment status, so it
+sends no Oracle DELETEs. This includes calendars newly built by this launcher.
+An empty rule list or a locally created calendar is not used as proof of zero users.
+
+The future deletion work must implement and live-test an authoritative assignment
+check and the permitted removal path. There is no setting in this packet that
+enables deletion. This release does not claim deletion acceptance.

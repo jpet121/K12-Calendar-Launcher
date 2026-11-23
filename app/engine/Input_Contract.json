@@ -1,0 +1,112 @@
+{
+  "Event matrix": {
+    "input_cells": [
+      "A10",
+      "A11",
+      "A9",
+      "B10",
+      "B11",
+      "B9",
+      "C10",
+      "C11",
+      "C9",
+      "D10",
+      "D11",
+      "D9",
+      "F10",
+      "F11",
+      "F9",
+      "G10",
+      "G11",
+      "G9",
+      "H10",
+      "H11",
+      "H9",
+      "I10",
+      "I11",
+      "I7",
+      "I9",
+      "J10",
+      "J11",
+      "J7",
+      "J9"
+    ],
+    "fixed_cells": {
+      "A2": "Create events, then build calendars",
+      "A3": "SAMPLE-A \u2022 Three new US events \u2022 Two new calendars \u2022 Rules deferred",
+      "A4": "Edit amber cells. Put X under each calendar that uses an event. Each event is created once and shared wherever selected.",
+      "A6": "Event count",
+      "B6": {
+        "formula": true
+      },
+      "C6": "Calendar count",
+      "D6": {
+        "formula": true
+      },
+      "F6": "Links",
+      "G6": {
+        "formula": true
+      },
+      "H7": "Calendar keys \u2192",
+      "A8": "Event code",
+      "B8": "Event name",
+      "C8": "Start date / time",
+      "D8": "End date / time\n(exclusive)",
+      "E8": "Days",
+      "F8": "All day",
+      "G8": "Half day",
+      "H8": "Category",
+      "I8": {
+        "formula": true
+      },
+      "J8": {
+        "formula": true
+      },
+      "E9": {
+        "formula": true
+      },
+      "E10": {
+        "formula": true
+      },
+      "E11": {
+        "formula": true
+      },
+      "A14": "The same MLK event belongs to both calendars. Spring Break belongs only to A; Memorial Day belongs only to B.",
+      "A16": "Times are local wall-clock inputs for this SAMPLE_A pilot, based on the exported midnight values. The loader must verify the resulting Oracle dates and flags.",
+      "A18": "Existing source events and calendars remain unchanged. These names and codes identify new pilot records.",
+      "A19": "Template version: K12-CREATE-PILOT-1. Keep stable keys with their records. The loader validates inputs before submission."
+    }
+  },
+  "Calendars": {
+    "input_cells": [
+      "A10",
+      "A9",
+      "B10",
+      "B9",
+      "C10",
+      "C9",
+      "D10",
+      "D9",
+      "E10",
+      "E9"
+    ],
+    "fixed_cells": {
+      "A2": "Two calendars, different event selections",
+      "A3": "SAMPLE-A \u2022 US pilot \u2022 2026\u20132027 \u2022 New records only",
+      "A4": "Edit the amber name and description cells. Calendar dates are fixed for this pilot. Keep each key with its record when sorting.",
+      "A8": "Calendar key",
+      "B8": "Calendar name",
+      "C8": "Start date",
+      "D8": "End date",
+      "E8": "Description",
+      "A13": "Scope",
+      "A14": "Create these calendars from the Event matrix. Blank selections never remove existing links. No eligibility rules or worker assignments are requested.",
+      "A16": "Date convention",
+      "A17": "Event end times are exclusive: Jan 18 at midnight to Jan 19 at midnight covers Jan 18. The Spring Break example covers Apr 12\u201315.",
+      "A19": "Source",
+      "A20": "Illustrative dates and stable example codes for offline validation.",
+      "A22": "All Day = No and Half Day = No reflect the source examples. Midnight boundaries do not automatically change those flags.",
+      "A24": "Template version: K12-CREATE-PILOT-1. This workbook is input for the loader; saving it does not change Oracle."
+    }
+  }
+}

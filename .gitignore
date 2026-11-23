@@ -1,0 +1,12 @@
+__pycache__/
+*.py[cod]
+app/config.json
+state/
+evidence-local/
+exports/
+journals/
+*.log
+.env
+.env.*
+*.sqlite*
+~$*

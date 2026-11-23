@@ -1,8 +1,8 @@
 # K–12 Calendar Launcher | Oracle HCM
 
-**Assign holidays to many Oracle HCM calendars in one workbook.**
+**Assign holidays/events to many Oracle HCM calendars in one workbook.**
 
-A school district or another organization may maintain up to 30 calendars. When the standard workflow requires one assignment at a time, even a single shared holiday can mean repeating the same task 30 times. Some employee groups follow different schedules, so assigning every event to every calendar would also be wrong.
+A school district or another organization may maintain up to 30 or more calendars. When the standard workflow requires one assignment at a time, even a single shared holiday/event can mean repeating the same task 30 or more times. Some employee groups follow different schedules, so assigning every event to every calendar would also be wrong.
 
 The launcher lets a calendar administrator define each event once. In Excel, each row is an event and each column is a calendar. Mark **X** where the event belongs. For example, a district can mark a winter holiday across all 30 calendars and a second holiday across just four. The administrator can review all 34 assignments together and submit one build from the launcher.
 

@@ -36,3 +36,7 @@ jobs:
       - name: Check the published workbook example
         working-directory: app
         run: python -c "from pathlib import Path; from workbooks import load_plan; p = load_plan(Path('templates/Calendar_Build_Sample.xlsx')); assert p['counts'] == {'new_events':3,'new_calendars':2,'selected_links':4} and p['oracle_writes_submitted'] is False"
+      - name: Install browser test driver
+        run: python -m pip install "playwright>=1.50,<2"
+      - name: Open all workflow tabs in installed Chrome
+        run: python tools/check_offline_ui.py

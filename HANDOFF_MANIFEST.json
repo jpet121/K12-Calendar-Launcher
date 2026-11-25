@@ -3,14 +3,19 @@
   "edition": "Public evaluation",
   "files": [
     {
+      "path": ".github/workflows/verify.yml",
+      "bytes": 1505,
+      "sha256": "1f576e3426106f4f6a0ecaa65b85cc590a9ab98e08c568dc41ea6ff146e2f1a8"
+    },
+    {
       "path": ".gitignore",
       "bytes": 113,
       "sha256": "01e5c06932e9c00cbfa5f0278269cefb598e3f920e8ff5a10729b2627f3389bd"
     },
     {
       "path": "README.md",
-      "bytes": 3549,
-      "sha256": "6bb57e1cb1da622eab59aebae46a8e61f981635071834360e3ea426953aec5d4"
+      "bytes": 4304,
+      "sha256": "217ded4d9ff622363e3d18bb6af70fd68373e190334bc56ebbaddcf397b5bdcf"
     },
     {
       "path": "RUN-SELF-TEST.cmd",
@@ -243,9 +248,14 @@
       "sha256": "01437c4ad9d0f0d247016e4a0f445235032d435f97cf7f33cfebe78602c4187e"
     },
     {
+      "path": "docs/images/social-preview.png",
+      "bytes": 53233,
+      "sha256": "71877abd2b2a9b1f992cdaabb1713527864dc07009535871094e45ca80650721"
+    },
+    {
       "path": "docs/run-locally.md",
-      "bytes": 1646,
-      "sha256": "e4c73e12b5a93ecc586160f93bf6b0617172edb336aa0ea6ef56dd0c84deef76"
+      "bytes": 1854,
+      "sha256": "f67782f573dead558c69f64c5a980cc3622f9b4dee10e0787924edc05734e220"
     },
     {
       "path": "evidence/offline-test-result.json",
@@ -254,8 +264,13 @@
     },
     {
       "path": "evidence/verification.md",
-      "bytes": 1431,
-      "sha256": "46f143ac2a98b35fea52fd8378ca4cbb4db38d2bcaf5e8c73209212394723a30"
+      "bytes": 2302,
+      "sha256": "91582ed5c452b5686cf8088701ad3b7dd06487ddfe3ffa7e81e8b5ef4cc79d73"
+    },
+    {
+      "path": "tools/check_offline_ui.py",
+      "bytes": 2634,
+      "sha256": "e9b7b78f8597b3b09dbcc8188c01aea67d0250c7eee01c38b40368b5ae40de83"
     }
   ]
 }

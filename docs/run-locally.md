@@ -1,6 +1,6 @@
 # Run the launcher
 
-Download the repository ZIP and extract it to a writable folder. Install Python 3.10 or later if needed. [Python for Windows](https://www.python.org/downloads/windows/)
+Download the [launcher ZIP](https://github.com/jpet121/K12-Calendar-Launcher/archive/refs/heads/main.zip). Extract the complete ZIP to a writable folder. Install Python 3.10 or later if needed. [Python for Windows](https://www.python.org/downloads/windows/)
 
 ## Try the workbook offline
 
@@ -11,7 +11,7 @@ cd app
 py -3 -c "from pathlib import Path; from workbooks import load_plan; print(load_plan(Path('templates/Calendar_Build_Sample.xlsx'))['counts'])"
 ```
 
-Expect three new events, two calendars and four selected links. This reads the workbook locally. Run the self-test from the repository root with RUN-SELF-TEST.cmd.
+Expect `new_events: 3`, `new_calendars: 2`, and `selected_links: 4`. Martin Luther King Day appears on both calendars. Spring Break appears only on A. Memorial Day appears only on B. This reads the workbook locally. Run the self-test from the repository root with RUN-SELF-TEST.cmd.
 
 ## Open the interface
 

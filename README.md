@@ -1,37 +1,48 @@
-# K–12 Calendar Launcher | Oracle HCM
+# K–12 Calendar Launcher · Bulk event assignments for Oracle HCM
 
-**Assign holidays/events to many Oracle HCM calendars in one workbook.**
+**One district holiday can apply to 30 employee calendars. Spring break might apply to only four.** The administrator needs a way to enter each event once and review exactly which calendars receive it.
 
-A school district or another organization may maintain up to 30 or more calendars. When the standard workflow requires one assignment at a time, even a single shared holiday/event can mean repeating the same task 30 or more times. Some employee groups follow different schedules, so assigning every event to every calendar would also be wrong.
+K–12 Calendar Launcher turns an Excel workbook into a build for Oracle Fusion Cloud Human Capital Management (HCM). Each row is an event. Each calendar has a column. Mark **X** at each intersection you want to create. A single workbook describes the new calendars, new events, and their assignments. A blank cell leaves existing assignments alone.
 
-The launcher lets a calendar administrator define each event once. In Excel, each row is an event and each column is a calendar. Mark **X** where the event belongs. For example, a district can mark a winter holiday across all 30 calendars and a second holiday across just four. The administrator can review all 34 assignments together and submit one build from the launcher.
+**[Download the sample workbook](https://github.com/jpet121/K12-Calendar-Launcher/raw/refs/heads/main/app/templates/Calendar_Build_Sample.xlsx)** · [Download the blank template](https://github.com/jpet121/K12-Calendar-Launcher/raw/refs/heads/main/app/templates/Calendar_Build_Blank.xlsx) · [Download the launcher (.zip)](https://github.com/jpet121/K12-Calendar-Launcher/archive/refs/heads/main.zip)
 
-The workbook builds **new calendars, new events, and their links**. A blank cell leaves existing links alone. The demonstrated build supports the **Public holiday** category. The sample is small enough to check by hand: three events, two calendars, and four assignments.
+## Try the sample before connecting to Oracle
 
-![Calendar inventory showing the workflow tabs, summary counts, search field, and redacted record IDs](docs/images/calendar-inventory.png)
+Open the workbook and check the four selected assignments. The sample uses Oracle's **Public holiday** category for all three entries.
 
-*Inventory view from the working launcher. Screenshot supplied and redacted by Jan Petreczko. Cropped for public release.*
+| Event | Calendar A | Calendar B |
+| --- | :---: | :---: |
+| Martin Luther King Day | X | X |
+| Spring Break | X | |
+| Memorial Day | | X |
 
-**[Try the workbook offline](docs/run-locally.md)** · **[Open the sample](app/templates/Calendar_Build_Sample.xlsx)** · **[See the design](docs/design.md)** · **[View verification](evidence/verification.md)**
+The offline validator reports **3 new events, 2 new calendars, and 4 selected links**. You can reproduce that result without an Oracle account. [Validate the workbook locally](docs/run-locally.md#try-the-workbook-offline)
 
-## What you can do
+## What you can do after the build
 
-| Workflow | What it does |
+![The working Calendar Launcher shows 13 calendars, 87 distinct events, and 139 event links. It has tabs for inventory, creation, edits, deletion checks, and recovery. Record IDs are redacted.](docs/images/calendar-inventory.png)
+
+The inventory above shows why the counts differ. A distinct event can appear on more than one calendar. This is Jan Petreczko's redacted inventory capture. The smaller workbook above is a separate, fictional example.
+
+| Task | What the launcher does |
 | --- | --- |
-| **Read and export** | Search the calendars your Oracle account can see, inspect their events, and export the current inventory. |
-| **Create from workbook** | Plan event assignments across calendars in Excel. Validate the workbook, review the proposed calendars and links, then submit the build. |
-| **Edit** | Correct an existing calendar’s name, description, or date range. For a shared event, review the affected calendars before changing its dates. One event date change affects every calendar that uses it. The launcher checks the current record again before applying the correction. |
-| **Delete check** | Select a calendar to check deletion eligibility. This edition blocks deletion because it cannot reliably verify that zero workers are assigned. |
-| **Recovery** | After an interrupted build, reopen the same workbook with the same request ID. The launcher checks saved progress before continuing. For a correction with an uncertain result, compare the saved receipt with Oracle. You can also preview a change to restore earlier event dates. |
+| **Read and export** | Search the calendars your Oracle account can see. Inspect their events and export the inventory. |
+| **Build** | Validate a workbook and preview its proposed records and links. An authorized operator reviews and submits the build. |
+| **Edit** | Correct a calendar name, description, or date range. For a shared event date change, review all affected calendars. The launcher reads the record again before applying the correction. |
+| **Check deletion** | Check whether a calendar can be deleted. This edition blocks deletion because it cannot verify that zero workers are assigned. |
+| **Recover** | Reopen the same workbook with its original request ID after an interruption. The launcher checks saved progress. For an uncertain edit, compare the saved receipt with Oracle. You can also preview a change to restore earlier event dates. |
 
-## Run it
+## Run it on Windows
 
-Use Windows with Python 3.10 or newer. From the extracted folder, run **RUN-SELF-TEST.cmd**, then **START-CALENDAR-LAUNCHER.cmd**. The interface opens in the local browser. Live operations require an authorized Oracle HCM environment and account. The offline example requires neither.
+1. Install Python 3.10 or later. Extract the complete launcher ZIP to a writable folder.
+2. Run **RUN-SELF-TEST.cmd**. The tests use fictional data and require no Oracle sign-in.
+3. Run **START-CALENDAR-LAUNCHER.cmd**. The interface opens in your browser.
+4. For live work, select your authorized Oracle environment. Check the target and proposed changes before you submit them.
 
-## How it works
+The local Python service keeps a separate record of operations for each environment. Keep private configuration, workbooks, exports, and recovery records on the operator's machine. [Setup and sign-in](docs/run-locally.md) · [Design and recovery controls](docs/design.md)
 
-A Python service binds to the local computer. It reads workbook cells directly and serves the browser interface. The operator selects the Oracle environment. Separate state folders hold each environment’s journals and receipts. Runtime dependencies are included in the Python standard library.
+## Verification
 
-## What the tests show
+[![Offline checks](https://github.com/jpet121/K12-Calendar-Launcher/actions/workflows/verify.yml/badge.svg?branch=main)](https://github.com/jpet121/K12-Calendar-Launcher/actions/workflows/verify.yml)
 
-The public edition includes offline regression tests for workbook rules, environment selection, simulated Oracle operations and recovery. The verification page distinguishes those results from live tenant and Windows workstation checks.
+The public suite exercises workbook validation, simulated Oracle operations, shared-event edits, and interruption recovery. The Windows job runs the self-test through the shipped launcher. Testing changes against a real Oracle tenant requires a separate, authorized acceptance run. [Verified Windows and Linux jobs](https://github.com/jpet121/K12-Calendar-Launcher/actions/runs/45662542827) · [Verification scope](evidence/verification.md)

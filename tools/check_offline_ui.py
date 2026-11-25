@@ -7,7 +7,7 @@ import sys
 from threading import Thread
 from urllib.parse import urlsplit
 
-from playwright.sync_api import sync_playwright
+from playwright.sync_api import expect, sync_playwright
 
 ROOT = Path(__file__).resolve().parents[1]
 
@@ -53,7 +53,7 @@ def main():
             page = context.new_page()
             page.on("pageerror", lambda error: errors.append(str(error)))
             page.goto(url, wait_until="networkidle")
-            assert page.title() == "Calendar Launcher"
+            expect(page).to_have_title("Calendar Launcher · Choose environment")
             for tab in ("read", "create", "edit", "delete", "recovery"):
                 page.locator(f'button[data-tab="{tab}"]').click()
                 assert page.locator(f"#panel-{tab}").is_visible(), tab

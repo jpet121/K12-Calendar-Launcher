@@ -1,8 +1,8 @@
 # K–12 Calendar Launcher · Bulk event assignments for Oracle HCM
 
-**One district holiday can apply to 30 employee calendars. Spring break might apply to only four.** The administrator needs a way to enter each event once and review exactly which calendars receive it.
+**Scenario.** A school district needs one holiday on 30 employee calendars and spring break on only four. In Excel, the administrator enters each event once and marks an **X** for each calendar that should receive it.
 
-K–12 Calendar Launcher turns an Excel workbook into a build for Oracle Fusion Cloud Human Capital Management (HCM). Each row is an event. Each calendar has a column. Mark **X** at each intersection you want to create. A single workbook describes the new calendars, new events, and their assignments. A blank cell leaves existing assignments alone.
+**Value.** The administrator can review all 34 assignments together and submit one build for the new calendars and events in Oracle Fusion Cloud Human Capital Management (HCM). A blank cell leaves an existing assignment alone.
 
 **[Download the sample workbook](https://github.com/jpet121/K12-Calendar-Launcher/raw/refs/heads/main/app/templates/Calendar_Build_Sample.xlsx)** · [Download the blank template](https://github.com/jpet121/K12-Calendar-Launcher/raw/refs/heads/main/app/templates/Calendar_Build_Blank.xlsx) · [Download the launcher (.zip)](https://github.com/jpet121/K12-Calendar-Launcher/archive/refs/heads/main.zip)
 

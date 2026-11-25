@@ -1,0 +1,38 @@
+name: Offline checks
+on:
+  push:
+    branches: [main]
+    paths:
+      - '**.py'
+      - '.github/workflows/verify.yml'
+      - '**.cmd'
+      - 'app/**'
+  pull_request:
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  check:
+    strategy:
+      fail-fast: false
+      matrix:
+        os: [windows-latest, ubuntu-latest]
+    runs-on: ${{ matrix.os }}
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+        with:
+          persist-credentials: false
+      - uses: actions/setup-python@6d4fd22b20465ccc0f7354476588e8df7c9ca0e0 # v7.1.0
+        with:
+          python-version: '3.12'
+      - name: Run the offline suite through the Windows launcher
+        if: runner.os == 'Windows'
+        shell: cmd
+        run: START-CALENDAR-LAUNCHER.cmd --self-test
+      - name: Run the offline suite on Linux
+        if: runner.os == 'Linux'
+        run: python app/launcher.py --self-test
+      - name: Check the published workbook example
+        working-directory: app
+        run: python -c "from pathlib import Path; from workbooks import load_plan; p = load_plan(Path('templates/Calendar_Build_Sample.xlsx')); assert p['counts'] == {'new_events':3,'new_calendars':2,'selected_links':4} and p['oracle_writes_submitted'] is False"
